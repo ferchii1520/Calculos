@@ -4,11 +4,13 @@ int p(int n){
     int k = 0;
     
     k = 1;
-    while( k <= n )  {
+    do{
         resultado = resultado * k;
         k = k + 1;
-    } 
-    return resultado;
+    } while (k <= n);
+    {
+        return resultado;
+    }
 }
 int pNr(int n, int r){    
     return p(n)/p(n-r);  //10! / 8! = (10 * 9) * ( 8!) / 8!       
